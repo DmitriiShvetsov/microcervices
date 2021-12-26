@@ -1,0 +1,11 @@
+server:
+  port : 8081
+
+custom-job:
+  crone: "*/10 * * * * *"
+
+
+rest-receiver:
+  host: http://localhost:8082
+  endpoints:
+    message: /message

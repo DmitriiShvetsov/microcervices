@@ -1,0 +1,10 @@
+server:
+  port: 8082
+
+kafka:
+  bootstrapAddress: localhost:29092
+  consumer-config:
+    topicName: test-topic
+    groupId: test-group-id
+  producer-config:
+    topicName: test-topic
