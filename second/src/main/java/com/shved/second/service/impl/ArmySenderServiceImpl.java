@@ -20,7 +20,7 @@ public class ArmySenderServiceImpl implements ArmySenderService {
 
     @Override
     public void sendArmy(Army army) {
-        ArmyType typeOfArmy = getIncorrectTypeOfArmy(army);
+        ArmyType typeOfArmy = getTypeOfArmy(army);
         processArmy(army, typeOfArmy);
     }
 
@@ -31,7 +31,7 @@ public class ArmySenderServiceImpl implements ArmySenderService {
                 .ifPresent(resolver -> resolver.processArmy(army));
     }
 
-    private ArmyType getIncorrectTypeOfArmy(Army army) {
+    private ArmyType getTypeOfArmy(Army army) {
         return Optional.ofNullable(army)
                 .map(Army::getType)
                 .orElseGet(() -> {
