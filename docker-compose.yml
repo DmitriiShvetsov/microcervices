@@ -39,8 +39,6 @@ services:
 
   prometheus:
     image: docker.io/prom/prometheus:latest
-    networks:
-      - jpoint_network
     hostname: prometheus
     container_name: prometheus
     ports:
@@ -50,8 +48,6 @@ services:
 
   grafana:
     image: docker.io/grafana/grafana:latest
-    networks:
-      - jpoint_network
     hostname: grafana
     container_name: grafana
     ports:
