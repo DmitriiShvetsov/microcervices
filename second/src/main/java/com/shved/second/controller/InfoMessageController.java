@@ -7,6 +7,7 @@ import com.shved.storage.dto.rest.InfoMessageRequest;
 import com.shved.storage.dto.rest.InfoMessageResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,7 +22,7 @@ public class InfoMessageController {
     private final KafkaProducer kafkaProducer;
     private final ArmySenderService armySenderService;
 
-    @PostMapping("/message")
+    @PostMapping("/message/test")
     public InfoMessageResponse receiveMessage(@RequestBody InfoMessageRequest request) {
         log.info("received message =[{}]", request);
 
@@ -30,6 +31,12 @@ public class InfoMessageController {
         InfoMessageResponse infoMessageResponse = getInfoMessageResponse();
         log.info("generated response =[{}]", infoMessageResponse);
         return infoMessageResponse;
+    }
+    @GetMapping("/message/test")
+    public String test() {
+        log.info("test message");
+
+        return "test message";
     }
 
     @PostMapping("/army")

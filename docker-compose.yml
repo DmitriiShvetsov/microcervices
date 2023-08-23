@@ -1,19 +1,19 @@
 version: '3.1'
 services:
 
-  db:
-    image: postgres
-    restart: always
-    environment:
-      POSTGRES_USER: password
-      POSTGRES_PASSWORD: example
-
-  mongo:
-    image: mongo
-    restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
+#  db:
+#    image: postgres
+#    restart: always
+#    environment:
+#      POSTGRES_USER: password
+#      POSTGRES_PASSWORD: example
+#
+#  mongo:
+#    image: mongo
+#    restart: always
+#    environment:
+#      MONGO_INITDB_ROOT_USERNAME: root
+#      MONGO_INITDB_ROOT_PASSWORD: example
 
   zookeeper:
     image: confluentinc/cp-zookeeper:latest
@@ -37,20 +37,20 @@ services:
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 
-  prometheus:
-    image: docker.io/prom/prometheus:latest
-    hostname: prometheus
-    container_name: prometheus
-    ports:
-      - "9090:9090"
-#    volumes:
-#      - C:\Docker\jpoint\prometheus\prometheus.yml:/etc/prometheus/prometheus.yml
-
-  grafana:
-    image: docker.io/grafana/grafana:latest
-    hostname: grafana
-    container_name: grafana
-    ports:
-      - "3000:3000"
-#    volumes:
-#      - C:\Docker\jpoint\grafana\storage:/var/lib/grafana
+#  prometheus:
+#    image: docker.io/prom/prometheus:latest
+#    hostname: prometheus
+#    container_name: prometheus
+#    ports:
+#      - "9090:9090"
+##    volumes:
+##      - C:\Docker\jpoint\prometheus\prometheus.yml:/etc/prometheus/prometheus.yml
+#
+#  grafana:
+#    image: docker.io/grafana/grafana:latest
+#    hostname: grafana
+#    container_name: grafana
+#    ports:
+#      - "3000:3000"
+##    volumes:
+##      - C:\Docker\jpoint\grafana\storage:/var/lib/grafana

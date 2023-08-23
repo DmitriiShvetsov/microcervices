@@ -5,6 +5,6 @@ custom-job:
   crone: "*/10 * * * * *"
 
 rest-receiver:
-  host: http://localhost:8082
+  host: http://localhost:8080
   endpoints:
-    message: /message
+    message: /message/test
