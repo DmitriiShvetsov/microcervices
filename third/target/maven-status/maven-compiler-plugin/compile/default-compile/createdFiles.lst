@@ -1,0 +1,9 @@
+com/shved/third/service/impl/ClientServiceImpl.class
+com/shved/third/ClientRepository.class
+com/shved/third/entity/ClientEntity.class
+com/shved/third/mapper/ClientMapperImpl.class
+com/shved/third/service/ClientService.class
+com/shved/third/controller/ClientController.class
+com/shved/third/ThirdApplication.class
+com/shved/third/mapper/ClientMapper.class
+com/shved/third/dto/ClientDto.class

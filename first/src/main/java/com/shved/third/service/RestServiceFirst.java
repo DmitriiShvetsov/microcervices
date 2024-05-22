@@ -1,4 +1,4 @@
-package com.shved.first.service;
+package com.shved.third.service;
 
 public interface RestServiceFirst {
 

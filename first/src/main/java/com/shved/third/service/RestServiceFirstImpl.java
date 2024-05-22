@@ -1,6 +1,6 @@
-package com.shved.first.service.impl;
+package com.shved.third.service;
 
-import com.shved.first.service.RestServiceFirst;
+import com.shved.third.service.RestServiceFirst;
 import com.shved.storage.dto.rest.InfoMessageResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

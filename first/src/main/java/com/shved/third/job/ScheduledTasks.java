@@ -1,6 +1,6 @@
-package com.shved.first.job;
+package com.shved.third.job;
 
-import com.shved.first.service.RestServiceFirst;
+import com.shved.third.service.RestServiceFirst;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;

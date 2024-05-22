@@ -1,12 +1,6 @@
 version: '3.1'
 services:
 
-#  db:
-#    image: postgres
-#    restart: always
-#    environment:
-#      POSTGRES_USER: password
-#      POSTGRES_PASSWORD: example
 #
 #  mongo:
 #    image: mongo
@@ -48,6 +42,25 @@ services:
       - KAFKA_CLUSTERS_0_NAME=local
       - KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:9092
       - KAFKA_CLUSTERS_0_ZOOKEEPER=zookeeper:2181
+
+  db:
+    image: postgres:15.3-alpine3.18
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./db:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: 'teste@teste.com'
+      PGADMIN_DEFAULT_PASSWORD: 'teste'
+    ports:
+      - 16543:80
 
 #  prometheus:
 #    image: docker.io/prom/prometheus:latest

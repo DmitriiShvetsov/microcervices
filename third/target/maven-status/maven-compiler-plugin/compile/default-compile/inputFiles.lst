@@ -1,0 +1,8 @@
+/home/ubuntu100/IdeaProjects/microcervices/third/src/main/java/com/shved/third/ThirdApplication.java
+/home/ubuntu100/IdeaProjects/microcervices/third/src/main/java/com/shved/third/service/impl/ClientServiceImpl.java
+/home/ubuntu100/IdeaProjects/microcervices/third/src/main/java/com/shved/third/mapper/ClientMapper.java
+/home/ubuntu100/IdeaProjects/microcervices/third/src/main/java/com/shved/third/entity/ClientEntity.java
+/home/ubuntu100/IdeaProjects/microcervices/third/src/main/java/com/shved/third/controller/ClientController.java
+/home/ubuntu100/IdeaProjects/microcervices/third/src/main/java/com/shved/third/service/ClientService.java
+/home/ubuntu100/IdeaProjects/microcervices/third/src/main/java/com/shved/third/ClientRepository.java
+/home/ubuntu100/IdeaProjects/microcervices/third/src/main/java/com/shved/third/dto/ClientDto.java

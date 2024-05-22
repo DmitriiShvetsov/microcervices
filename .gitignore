@@ -42,3 +42,12 @@ second/.mvn
 second/target
 second/mvnw
 second/mvnw.cmd
+
+third/.idea
+third/.mvn
+third/target
+third/mvnw
+third/mvnw.cmd
+
+db
+
